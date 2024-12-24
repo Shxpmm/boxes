@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Design</title>
+    <link rel="stylesheet" href="to.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">H</div>
+            <nav class="nav">
+                <button class="nav-item active"><i class="icon">🏠</i></button>
+                <button class="nav-item"><i class="icon">📅</i></button>
+                <button class="nav-item"><i class="icon">📊</i></button>
+                <button class="nav-item"><i class="icon">⚙️</i></button>
+            </nav>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" alt="User">
+            </div>
+        </aside>
+
+        <!-- Main Section -->
+        <main class="main">
+            <header class="header">
+                <div class="welcome">
+                    <h1>Hello, Alex!</h1>
+                    <p>Ready for today’s challenges?</p>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search for some activities">
+                    <button class="premium-btn">Premium</button>
+                </div>
+            </header>
+
+            <!-- Physical Activity Section -->
+            <section class="activity-section">
+                <div class="activity-card">
+                    <h3>Physical Activity</h3>
+                    <div class="activity-stats">
+                        <div class="stat">
+                            <h4>Steps</h4>
+                            <p class="value">8,745</p>
+                            <p class="goal">Goal: 8,000</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Calories Burned</h4>
+                            <p class="value">700</p>
+                            <p class="goal">Goal: 500</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Activity Time</h4>
+                            <p class="value">2h 45min</p>
+                            <p class="goal">Goal: 2h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-card">
+                    <h3>Your Active Days</h3>
+                    <div class="calendar">
+                        <!-- Example calendar -->
+                        <div class="day active">15</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Goals and Activities -->
+            <section class="goals-activities">
+                <div class="goal-card">
+                    <h3>Sleep Time</h3>
+                    <div class="progress-circle">7.45h</div>
+                </div>
+                <div class="goal-card">
+                    <h3>Weight Loss Plan</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="activities">
+                    <h3>My Activities</h3>
+                    <button class="activity">Running</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

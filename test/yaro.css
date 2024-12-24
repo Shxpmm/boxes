@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.todo-list {
+    flex: 1 1 300px; /* حداقل عرض 300px */
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h2 {
+    margin-bottom: 10px;
+}
+
+.todo-list ul {
+    list-style-type: none;
+}
+
+.todo-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row; /* باکس‌ها را به صورت افقی قرار می‌دهد */
+    flex: 1 1 600px; /* حداقل عرض 600px */
+}
+
+.small-box {
+    flex: 1 1 30%; /* باکس‌های کوچک */
+    background-color: #e7f3fe;
+    margin: 10px; /* حاشیه */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.large-box {
+    flex: 1 1 100%; /* باکس‌های بزرگ */
+    background-color: #d1e7dd;
+    margin: 10px; /* حاشیه */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .todo-list {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .small-box {
+        flex: 1 1 100%; /* باکس‌های کوچک در اندازه‌های کوچک‌تر */
+    }
+
+    .large-box {
+        flex: 1 1 100%; /* باکس‌های بزرگ در اندازه‌های کوچک‌تر */
+    }
+}

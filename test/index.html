@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Modern Dashboard</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1f1f23;
+            color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        /* Box Styling */
+        .box {
+            background: #2a2b31;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #76ff03;
+        }
+        .box-content {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Specific Box Styling */
+        .calendar-box {
+            background: linear-gradient(135deg, #3a3b47, #4a4b58);
+        }
+        .weather-box {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: #fff;
+        }
+        .poem-box {
+            background: linear-gradient(135deg, #6b21a8, #9d4edd);
+        }
+        .todolist-box {
+            background: linear-gradient(135deg, #065f46, #10b981);
+        }
+        .news-box {
+            background: linear-gradient(135deg, #3b3b3b, #575757);
+        }
+
+        /* Image Space */
+        .image-box {
+            grid-column: span 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #2a2b31;
+            border-radius: 15px;
+            height: 200px;
+            color: #76ff03;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .image-box {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Top Right Image Space -->
+        <div class="image-box">
+            Image Placeholder
+        </div>
+
+        <!-- Boxes -->
+        <div class="box calendar-box">
+            <h2>Calendar</h2>
+            <div class="box-content">
+                <p>Your active days for November</p>
+                <p>15 tasks remaining this month.</p>
+            </div>
+        </div>
+
+        <div class="box weather-box">
+            <h2>Weather</h2>
+            <div class="box-content">
+                <p>Temperature: 24°C</p>
+                <p>Condition: Partly Cloudy</p>
+                <p>Humidity: 58%</p>
+            </div>
+        </div>
+
+        <div class="box poem-box">
+            <h2>Poem of the Day</h2>
+            <div class="box-content">
+                <p>"The woods are lovely, dark and deep,<br>
+                But I have promises to keep,<br>
+                And miles to go before I sleep."</p>
+            </div>
+        </div>
+
+        <div class="box todolist-box">
+            <h2>To-Do List</h2>
+            <div class="box-content">
+                <ul>
+                    <li>Complete project review</li>
+                    <li>Attend team meeting</li>
+                    <li>Submit report</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box news-box">
+            <h2>Latest News</h2>
+            <div class="box-content">
+                <p>- Stock markets surge by 2%.</p>
+                <p>- New tech gadget launches this week.</p>
+                <p>- Local community event on Friday.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
